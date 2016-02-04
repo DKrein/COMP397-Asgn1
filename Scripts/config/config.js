@@ -5,8 +5,17 @@ var config;
         function Scene() {
         }
         Scene.INTRO = 0;
-        Scene.LEFT_CAVE = 1;
-        Scene.RIGHT_CAVE = 2;
+        Scene.OPT1 = 1;
+        Scene.OPT2A = 2;
+        Scene.OPT2B = 3;
+        Scene.OPT3A = 4;
+        Scene.OPT3B = 5;
+        Scene.OPT3C = 6;
+        Scene.OPT3D = 7;
+        Scene.OUT1 = 8;
+        Scene.OUT2 = 9;
+        Scene.OUT3 = 10;
+        Scene.OUT4 = 11;
         return Scene;
     })();
     config.Scene = Scene;
@@ -14,10 +23,10 @@ var config;
     var Screen = (function () {
         function Screen() {
         }
-        Screen.WIDTH = 640;
-        Screen.HEIGHT = 480;
-        Screen.CENTER_X = 320;
-        Screen.CENTER_Y = 240;
+        Screen.WIDTH = 800;
+        Screen.HEIGHT = 600;
+        Screen.CENTER_X = 400;
+        Screen.CENTER_Y = 300;
         return Screen;
     })();
     config.Screen = Screen;
