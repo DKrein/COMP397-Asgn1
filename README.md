@@ -1,3 +1,3 @@
-# COMP397-W2016-TheNewDragon
+# COMP397-Asgn1 
 
-COMP397 The New Dragon Template for Web Game Programming @ Centennial
+COMP392-Asgn1 - Create a game using the State Machine Design Pattern
