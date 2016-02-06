@@ -9,6 +9,7 @@ var currentScene: objects.Scene;
 var scene: number;
 
 // Game Scenes
+var menu: scenes.Menu;
 var intro: scenes.Intro;
 var opt1: scenes.Opt1;
 var opt2a: scenes.Opt2a;
@@ -21,7 +22,10 @@ var out1: scenes.Out1;
 var out2: scenes.Out2;
 var out3: scenes.Out3;
 var out4: scenes.Out4;
-
+var out5: scenes.Out5;
+var out6: scenes.Out6;
+var out7: scenes.Out7;
+var out8: scenes.Out8;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -43,7 +47,7 @@ function init(): void {
     setupStats(); 
     
     // set initial scene
-    scene = config.Scene.INTRO;
+    scene = config.Scene.MENU;
     changeScene();
 }
 
@@ -77,6 +81,13 @@ function changeScene(): void {
     
     // Launch various scenes
     switch (scene) {
+        case config.Scene.MENU:
+            // show the MENU scene
+            stage.removeAllChildren();
+            menu = new scenes.Menu();
+            currentScene = menu;
+            console.log("Starting MENU Scene");
+            break;
         case config.Scene.INTRO:
             // show the MENU scene
             stage.removeAllChildren();
@@ -149,6 +160,30 @@ function changeScene(): void {
             out4 = new scenes.Out4();
             currentScene = out4;
             console.log("Starting OUT4 Scene");
+            break;      
+        case config.Scene.OUT5:
+            stage.removeAllChildren();
+            out5 = new scenes.Out5();
+            currentScene = out5;
+            console.log("Starting OUT5 Scene");
+            break;      
+        case config.Scene.OUT6:
+            stage.removeAllChildren();
+            out6 = new scenes.Out6();
+            currentScene = out6;
+            console.log("Starting OUT6 Scene");
+            break;      
+        case config.Scene.OUT7:
+            stage.removeAllChildren();
+            out7 = new scenes.Out7();
+            currentScene = out7;
+            console.log("Starting OUT7 Scene");
+            break;      
+        case config.Scene.OUT8:
+            stage.removeAllChildren();
+            out8 = new scenes.Out8();
+            currentScene = out8;
+            console.log("Starting OUT8 Scene");
             break;      
           
     }

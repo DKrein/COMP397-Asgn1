@@ -4,6 +4,7 @@ var config;
     var Scene = (function () {
         function Scene() {
         }
+        Scene.MENU = -1;
         Scene.INTRO = 0;
         Scene.OPT1 = 1;
         Scene.OPT2A = 2;
@@ -16,6 +17,10 @@ var config;
         Scene.OUT2 = 9;
         Scene.OUT3 = 10;
         Scene.OUT4 = 11;
+        Scene.OUT5 = 12;
+        Scene.OUT6 = 13;
+        Scene.OUT7 = 14;
+        Scene.OUT8 = 15;
         return Scene;
     })();
     config.Scene = Scene;

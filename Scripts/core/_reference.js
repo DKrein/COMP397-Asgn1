@@ -3,6 +3,7 @@
 /// <reference path="../objects/label.ts" />
 /// <reference path="../objects/button.ts" />
 /// <reference path="../objects/scene.ts" />
+/// <reference path="../scenes/menu.ts" />
 /// <reference path="../scenes/intro.ts" />
 /// <reference path="../scenes/opt1.ts" />
 /// <reference path="../scenes/opt2a.ts" />
@@ -15,4 +16,8 @@
 /// <reference path="../scenes/out2.ts" />
 /// <reference path="../scenes/out3.ts" />
 /// <reference path="../scenes/out4.ts" />
+/// <reference path="../scenes/out5.ts" />
+/// <reference path="../scenes/out6.ts" />
+/// <reference path="../scenes/out7.ts" />
+/// <reference path="../scenes/out8.ts" />
 //# sourceMappingURL=_reference.js.map

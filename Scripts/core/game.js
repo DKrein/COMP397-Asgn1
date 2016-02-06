@@ -6,6 +6,7 @@ var stats;
 var currentScene;
 var scene;
 // Game Scenes
+var menu;
 var intro;
 var opt1;
 var opt2a;
@@ -18,6 +19,10 @@ var out1;
 var out2;
 var out3;
 var out4;
+var out5;
+var out6;
+var out7;
+var out8;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -32,7 +37,7 @@ function init() {
     // sets up our stats counting workflow
     setupStats();
     // set initial scene
-    scene = config.Scene.INTRO;
+    scene = config.Scene.MENU;
     changeScene();
 }
 // Main Game Loop function that handles what happens each "tick" or frame
@@ -59,6 +64,13 @@ function setupStats() {
 function changeScene() {
     // Launch various scenes
     switch (scene) {
+        case config.Scene.MENU:
+            // show the MENU scene
+            stage.removeAllChildren();
+            menu = new scenes.Menu();
+            currentScene = menu;
+            console.log("Starting MENU Scene");
+            break;
         case config.Scene.INTRO:
             // show the MENU scene
             stage.removeAllChildren();
@@ -131,6 +143,30 @@ function changeScene() {
             out4 = new scenes.Out4();
             currentScene = out4;
             console.log("Starting OUT4 Scene");
+            break;
+        case config.Scene.OUT5:
+            stage.removeAllChildren();
+            out5 = new scenes.Out5();
+            currentScene = out5;
+            console.log("Starting OUT5 Scene");
+            break;
+        case config.Scene.OUT6:
+            stage.removeAllChildren();
+            out6 = new scenes.Out6();
+            currentScene = out6;
+            console.log("Starting OUT6 Scene");
+            break;
+        case config.Scene.OUT7:
+            stage.removeAllChildren();
+            out7 = new scenes.Out7();
+            currentScene = out7;
+            console.log("Starting OUT7 Scene");
+            break;
+        case config.Scene.OUT8:
+            stage.removeAllChildren();
+            out8 = new scenes.Out8();
+            currentScene = out8;
+            console.log("Starting OUT8 Scene");
             break;
     }
     console.log(currentScene.numChildren);

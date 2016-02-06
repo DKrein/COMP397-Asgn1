@@ -20,9 +20,9 @@ module scenes {
             this.addChild(this._opt1Image);
 
             this._opt2aButton = new objects.Button(
-                "Opt1btn",
-                config.Screen.CENTER_X - 100,
-                config.Screen.CENTER_Y + 220);
+                "opt1_btn1",
+                config.Screen.CENTER_X - 200,
+                config.Screen.CENTER_Y + 100);
             this.addChild(this._opt2aButton);
             
             // LEFT_CAVE Button event listener
@@ -30,9 +30,9 @@ module scenes {
             
             // add the LEFT_CAVE button to the MENU scene
             this._opt2bButton = new objects.Button(
-                "Opt2btn",
-                config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 220);
+                "opt1_btn2",
+                config.Screen.CENTER_X + 180,
+                config.Screen.CENTER_Y + 100);
             this.addChild(this._opt2bButton);            
             
             // LEFT_CAVE Button event listener

@@ -18,12 +18,12 @@ var scenes;
             // add LeftCave Image
             this._opt3Image = new createjs.Bitmap("../../Assets/images/opt3d.png");
             this.addChild(this._opt3Image);
-            this._opt2aButton = new objects.Button("Opt1btn", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 220);
+            this._opt2aButton = new objects.Button("opt3d_btn1", config.Screen.CENTER_X - 200, config.Screen.CENTER_Y + 100);
             this.addChild(this._opt2aButton);
             // LEFT_CAVE Button event listener
             this._opt2aButton.on("click", this._opt2aButtonClick, this);
             // add the LEFT_CAVE button to the MENU scene
-            this._opt2bButton = new objects.Button("Opt2btn", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 220);
+            this._opt2bButton = new objects.Button("opt3d_btn2", config.Screen.CENTER_X + 180, config.Screen.CENTER_Y + 100);
             this.addChild(this._opt2bButton);
             // LEFT_CAVE Button event listener
             this._opt2bButton.on("click", this._opt2bButtonClick, this);
@@ -42,7 +42,7 @@ var scenes;
         };
         Opt3d.prototype._opt2bButtonClick = function (event) {
             // Switch to the INTRO Scene
-            scene = config.Scene.OUT1;
+            scene = config.Scene.OUT8;
             changeScene();
         };
         return Opt3d;

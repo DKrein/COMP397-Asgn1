@@ -2,6 +2,7 @@
 
     // Scene Constants
     export class Scene {
+        public static MENU: number = -1;
         public static INTRO: number = 0;
         public static OPT1: number = 1;
         public static OPT2A: number = 2;
@@ -14,6 +15,10 @@
         public static OUT2: number = 9;
         public static OUT3: number = 10;
         public static OUT4: number = 11;
+        public static OUT5: number = 12;
+        public static OUT6: number = 13;
+        public static OUT7: number = 14;
+        public static OUT8: number = 15;
         
     }
     
